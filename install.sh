@@ -45,11 +45,6 @@ else
     success "Dependencies already installed."
 fi
 
-# Source cargo environment if available
-if [ -f "$HOME/.cargo/env" ]; then
-    . "$HOME/.cargo/env"
-fi
-
 # Step 2: Setup cargo profile for Termux (low memory usage)
 info "Setting up cargo profile 'termux'..."
 
