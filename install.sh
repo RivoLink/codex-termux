@@ -35,15 +35,14 @@ CARGO_CONFIG="$HOME/.cargo/config.toml"
 
 TERMUX_BIN="/data/data/com.termux/files/usr/bin"
 
-# Step 1: Install Rust if not installed
-info "Checking Rust installation..."
+# Step 1: Install dependencies if needed
 if ! command -v cargo >/dev/null 2>&1; then
-    info "Rust not found. Installing via pkg..."
+    info "Installing dependencies..."
     pkg update -y
-    pkg install rust -y
-    success "Rust installed successfully."
+    pkg install -y rust openssl pkg-config
+    success "Dependencies installed."
 else
-    success "Rust is already installed."
+    success "Dependencies already installed."
 fi
 
 # Source cargo environment if available

@@ -10,7 +10,7 @@ curl -fsSL https://github.com/rivolink/codex-termux/raw/main/install.sh | sh
 
 ## What the script does
 
-1. **Installs Rust** - via `pkg install rust` if not already installed
+1. **Installs dependencies** - `rust`, `openssl`, `pkg-config` via pkg
 2. **Configures cargo profile** - adds a `termux` profile to `~/.cargo/config.toml` optimized for low-memory devices
 3. **Fetches latest version** - detects the latest stable `rust-v*` tag from GitHub
 4. **Builds and installs codex-cli** - using cargo with the `termux` profile
