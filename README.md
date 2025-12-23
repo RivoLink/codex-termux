@@ -2,6 +2,14 @@
 
 Install or update [OpenAI Codex CLI](https://github.com/openai/codex) on Termux with a single command.
 
+## Before installation
+
+Update Termux packages first:
+
+```sh
+pkg update -y && pkg upgrade -y
+```
+
 ## Installation
 
 ```sh

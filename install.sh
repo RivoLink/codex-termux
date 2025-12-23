@@ -38,7 +38,6 @@ TERMUX_BIN="/data/data/com.termux/files/usr/bin"
 # Step 1: Install dependencies if needed
 if ! command -v cargo >/dev/null 2>&1; then
     info "Installing dependencies..."
-    pkg update -y
     pkg install -y rust openssl pkg-config
     success "Dependencies installed."
 else
