@@ -93,7 +93,7 @@ cargo install --git https://github.com/openai/codex \
 success "codex-cli installed successfully."
 
 # Step 5: Create symlink in Termux bin if not exists
-info "Setting up codex in PATH..."
+info "Setting up codex binary..."
 
 CODEX_SRC="$CARGO_BIN/codex"
 CODEX_DST="$TERMUX_BIN/codex"
@@ -119,6 +119,5 @@ echo ""
 info "Version installed: $LATEST_TAG"
 info "You can now run 'codex' from anywhere in Termux."
 echo ""
-info "To authenticate, run:"
-echo "  codex login"
+info "To authenticate, run: codex login"
 echo ""
