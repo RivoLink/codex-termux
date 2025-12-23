@@ -56,7 +56,7 @@ info "Setting up cargo profile 'termux'..."
 mkdir -p "$HOME/.cargo"
 
 # Check if profile.termux already exists
-if grep -q "\[profile\.termux\]" "$CARGO_CONFIG" 2>/dev/null; then
+if [ -f "$CARGO_CONFIG" ] && grep -q "\[profile\.termux\]" "$CARGO_CONFIG"; then
     success "Cargo profile 'termux' already configured."
 else
     info "Adding 'termux' profile to $CARGO_CONFIG..."
