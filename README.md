@@ -13,7 +13,7 @@ pkg update -y
 ## Installation
 
 ```sh
-curl -fsSL https://github.com/rivolink/codex-termux/raw/main/install.sh | sh
+curl -fsSL https://github.com/rivolink/codex-termux-installer/raw/main/install.sh | sh
 ```
 
 ## What the script does
@@ -50,7 +50,7 @@ codex login
 Run the same installation command to update to the latest version:
 
 ```sh
-curl -fsSL https://github.com/rivolink/codex-termux/raw/main/install.sh | sh
+curl -fsSL https://github.com/rivolink/codex-termux-installer/raw/main/install.sh | sh
 ```
 
 ## Requirements
